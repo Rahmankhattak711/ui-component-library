@@ -1,7 +1,23 @@
 {
   "name": "ui-library",
   "version": "0.1.0",
-  "private": true,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./components/Button": {
+      "import": "./dist/components/Button.mjs",
+      "require": "./dist/components/Button.cjs"
+    }
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -15,11 +31,13 @@
     "clsx": "^2.1.1",
     "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "ui-library": "file:.yalc/ui-library"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
     "@chromatic-com/storybook": "4.1.1",
+    "@next/bundle-analyzer": "^15.5.4",
     "@storybook/addon-a11y": "9.1.10",
     "@storybook/addon-docs": "9.1.10",
     "@storybook/addon-essentials": "^8.6.14",
@@ -42,6 +60,7 @@
     "playwright": "^1.55.1",
     "storybook": "9.1.10",
     "tailwindcss": "^4",
+    "tsup": "^8.5.0",
     "typescript": "^5",
     "vitest": "^3.2.4"
   }

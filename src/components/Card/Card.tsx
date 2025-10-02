@@ -8,7 +8,7 @@ interface CardProps {
   variant?: CardVariant;
 }
 
-export default function Card({
+export function Card({
   title,
   children,
   variant = "primary",

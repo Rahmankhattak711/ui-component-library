@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "ui-library": {
+      "signature": "2f298a526009646dbbef36e7562a611d",
+      "file": true,
+      "replaced": "file:.yalc/ui-component-library"
+    }
+  }
+}
