@@ -7,6 +7,6 @@ export default defineConfig({
   splitting: true,
   sourcemap: true,
   clean: true,
-  treeshake: true,
-  minify: false,
+  outDir: "dist",
+  treeshake: true
 });

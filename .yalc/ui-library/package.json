@@ -28,10 +28,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "next": "15.5.4",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "ui-library": "file:.yalc/ui-library"
   },
-  "yalcSig": "2f298a526009646dbbef36e7562a611d"
+  "yalcSig": "2a66d875ada655dd01dd047beb475bdb"
 }
