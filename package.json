@@ -1,5 +1,5 @@
 {
-  "name": "ui-library",
+  "name": "@rahman-ullah-8804/ui-library",
   "version": "0.1.0",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
